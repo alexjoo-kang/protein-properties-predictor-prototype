@@ -1,8 +1,51 @@
-# ProteinPropertiesPredictor
+# protein-properties-predictor-prototype
+
+## 🤝 Acknowledgment
+
+This project was created with significant assistance from ChatGPT (OpenAI), which helped in:
+
+    Designing the code architecture
+
+    Writing and debugging Python scripts
+
+    Structuring the machine learning pipeline
+
+    Generating documentation, including this README
+
+    Clarifying biological and computational concepts throughout the development process
+
+I'm grateful for how this AI tool accelerated learning and supported the creative development of this tutorial project.
+
+## 🔍 About Structural Classification
+
+⚠️ Important Note on Structural Categories and Thresholds
+
+This tool currently classifies protein structures into five broad categories based on user-defined thresholds for α-helix (H) and β-sheet (S) content:
+
+    Dominantly α-helical Proteins (H ≥ 0.5, S < 0.3) → Mostly α-helices
+
+    Dominantly β-sheet Proteins (S ≥ 0.5, H < 0.3) → Mostly β-sheets
+
+    α/β Proteins (0.3 ≤ H ≤ 0.5 and 0.3 ≤ S ≤ 0.5) → Intermixed α-helices & β-sheets
+
+    α+β Proteins (H > 0.3 and S > 0.3, but not in α/β range) → Segregated α and β regions
+
+    Unstructured / Coil-Dominant Proteins (H < 0.3 and S < 0.3) → Mostly random coils
+
+These thresholds and class names were chosen for tutorial and demonstration purposes and are not based on standardized structural classification schemes (thus named -prototype).
+
+🔧 If you are using this tool for real biological analysis, we recommend:
+
+    Referencing authoritative structural classification databases or literature.
+
+    Modifying the thresholds and class labels accordingly in the source code (feature_extractor.py, ml_model.py).
+
+    Optionally retraining the deep learning model to reflect updated class definitions.
+
 
 ## 🧬 Overview
 
-**ProteinPropertiesPredictor** is a Python tool that extracts physicochemical properties from amino acid sequences and predicts their structural class using a deep learning model.
+**protein-properties-predicor-prototype** is a Python tool that extracts physicochemical properties from amino acid sequences and predicts their structural class using a deep learning model.
 
 This package was built to provide structural classification **even when key tools like Biopython are not available**. It works best when online (to access BLASTp), but can still function in offline environments.  
 > 🔁 If Biopython fails, BLASTp will still work (as long as internet is available) because BLASTp is handled independently.
@@ -95,8 +138,8 @@ Here’s the layout:
 ### Step 1: Clone This Repository
 
 ```bash
-git clone https://github.com/alexjoo-kang/ProteinPropertiesPredictor.git
-cd ProteinPropertiesPredictor
+git clone https://github.com/alexjoo-kang/protein-properties-predictor-prototype.git
+cd protein-properties-predictor-prototype
 ```
 
 ---
