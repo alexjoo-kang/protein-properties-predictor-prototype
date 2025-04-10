@@ -1,0 +1,21 @@
+# macOS system file — generated automatically, safe to ignore
+.DS_Store
+
+# Python cache files — not needed in Git, auto-generated
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Output logs — if your program generates logs
+*.log
+*.out
+
+# Model and training artifacts — regenerated automatically
+*.keras     # Trained deep learning model file
+*.pkl       # Scaler (StandardScaler saved as pickle)
+*.joblib    # Sometimes joblib is used instead of pickle
+training_data.csv  # Training dataset (regenerated)
+
+# CLI output file — optional, generated after running CLI
+results.txt

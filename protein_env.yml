@@ -1,0 +1,13 @@
+name: protein_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - biopython
+  - numpy
+  - pandas
+  - scikit-learn
+  - pip
+  - pip:
+      - requests
+      - tensorflow-macos 
