@@ -25,7 +25,7 @@ setup(
         "Environment :: MacOS X",
     ],
     python_requires=">=3.10",
-    platforms=["macOS-arm64"]
+    platforms=["macOS-arm64"],
     entry_points={
         "console_scripts": [
             "proteinpropertiespredictor=protein_properties_predictor.cli:main",  # CLI-based execution only
