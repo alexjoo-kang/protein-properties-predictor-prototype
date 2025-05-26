@@ -4,15 +4,15 @@
 
 This project was created with significant assistance from ChatGPT (OpenAI), which helped in:
 
-    Designing the code architecture
+- Designing the code architecture
 
-    Writing and debugging Python scripts
+- Writing and debugging Python scripts
 
-    Structuring the machine learning pipeline
+- Structuring the machine learning pipeline
 
-    Generating documentation, including this README
+- Generating documentation, including this README
 
-    Clarifying biological and computational concepts throughout the development process
+- Clarifying biological and computational concepts throughout the development process
 
 I'm grateful for how this AI tool accelerated learning and supported the creative development of this tutorial project.
 
@@ -22,25 +22,25 @@ I'm grateful for how this AI tool accelerated learning and supported the creativ
 
 This tool currently classifies protein structures into five broad categories based on user-defined thresholds for α-helix (H) and β-sheet (S) content:
 
-    Dominantly α-helical Proteins (H ≥ 0.5, S < 0.3) → Mostly α-helices
+- Dominantly α-helical Proteins (H ≥ 0.5, S < 0.3) → Mostly α-helices
 
-    Dominantly β-sheet Proteins (S ≥ 0.5, H < 0.3) → Mostly β-sheets
+- Dominantly β-sheet Proteins (S ≥ 0.5, H < 0.3) → Mostly β-sheets
 
-    α/β Proteins (0.3 ≤ H ≤ 0.5 and 0.3 ≤ S ≤ 0.5) → Intermixed α-helices & β-sheets
+- α/β Proteins (0.3 ≤ H ≤ 0.5 and 0.3 ≤ S ≤ 0.5) → Intermixed α-helices & β-sheets
 
-    α+β Proteins (H > 0.3 and S > 0.3, but not in α/β range) → Segregated α and β regions
+- α+β Proteins (H > 0.3 and S > 0.3, but not in α/β range) → Segregated α and β regions
 
-    Unstructured / Coil-Dominant Proteins (H < 0.3 and S < 0.3) → Mostly random coils
+- Unstructured / Coil-Dominant Proteins (H < 0.3 and S < 0.3) → Mostly random coils
 
 These thresholds and class names were chosen for tutorial and demonstration purposes and are not based on standardized structural classification schemes (thus named -prototype).
 
 🔧 If you are using this tool for real biological analysis, we recommend:
 
-    Referencing authoritative structural classification databases or literature.
+- Referencing authoritative structural classification databases or literature.
 
-    Modifying the thresholds and class labels accordingly in the source code (feature_extractor.py, ml_model.py).
+- Modifying the thresholds and class labels accordingly in the source code (feature_extractor.py, ml_model.py).
 
-    Optionally retraining the deep learning model to reflect updated class definitions.
+- Optionally retraining the deep learning model to reflect updated class definitions.
 
 
 ## 🧬 Overview
